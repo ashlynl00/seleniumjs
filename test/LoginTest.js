@@ -32,9 +32,9 @@ describe('Login', function() {
     assert(!(await login.failureMessagePresent()), 'Failure message displayed')
   })
 
-  it('forced failure @shallow', async function() {
-    await login.authenticate('tomsmith', 'bad password')
-    assert.equal(false, true)
-  })
+  // it('forced failure @shallow', async function() {
+  //   await login.authenticate('tomsmith', 'bad password')
+  //   assert.equal(false, true)
+  // })
 
 })
